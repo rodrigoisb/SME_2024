@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=League+Spartan:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
+
+
+*{
+    margin: 0;
+    padding:0;
+    font-family:"Roboto", sans-serif;
+}
+
+.header{
+    background-color:#F5F5F5;
+    padding: 10;
+    text-align: left;
+}
+
+footer{
+    background-color: #F5F5F5;
+    color: #121212;
+    list-style: none;
+}
+
+.listaNav{
+    background-color:#F5F5F5;
+    .listaItem{
+        color: #121212; 
+    }
+    list-style: none;
+    padding: 10;
+    color: #FFFFFF;
+}
+
+a{
+    color: #F05454;
+}
+
+.main {
+    padding: 20px;
+}
+
+.h1{
+    font-family: 'League Spartan', sans-serif;
+    color: #121212;
+    text-align: center;
+}
+
+h3,h4{
+    font-weight: 600;
+}
+
+.colorNavy{
+    font-family: 'Roboto';
+    color: #30475E;
+    font-weight: 400
+}
+
+footer i.fa-brands {
+    color: #F05454;
+    margin-right: 10px;
+}
+
+.ContaBold{
+    font-weight:bold;
+}
