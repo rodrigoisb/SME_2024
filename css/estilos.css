@@ -1,11 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=League+Spartan:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
-
-*{
+/* Estilos generales */
+* {
     margin: 0;
-    padding:0;
-    font-family:"Roboto", sans-serif;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 
+body {
+    color: #05204A;
+    margin: 20px;
+    padding: 20px;
+}
+
+body h1 {
+    font-family: "League Gothic", sans-serif;
+    font-size: 3em;
+    color: #05204A;
+    text-align: left;
+    margin: 20px;
+}
+
+/* Estilos de navegación */
+.bgNavegacion {
+    background-color: #000000;
+    color: #fff;
+}
+
+.btn {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.navbar-nav li {    
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    line-height: 100px;
+    text-decoration: none;
+}
+
+.logo {
+    width: 100px;
+}
+
+/* Estilos para botones */
+.btn.btn-success {
+    color: #CC2936;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #750dfd;
+    border-color: #750dfd;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #3f0987;
+    border-color: #3f0987;
+}
+
+/* Estilos para el footer */
+
+ .footer {
+    background-color: black;
+    color: white;
+}
+
+/* Estilos para los enlaces del footer */
+.footer a {
+    color: white;
+}
+
+/* Estilos para el título del footer */
+.footer h4 {
+    color: white;
+}
+
+}
+
+/* Estilos para dispositivos móviles */
+
+
+
+
+/* Estilos para la sección de Nosotros */
+.Nosotroshistoria {
+    color: #05204A;
+    padding: 20px;
+}
+
+/* Estilos Galeria */
+
+.galeria container img {
+    width: 100%;
+    height: auto;
+}
+
+#galeria .col-lg-4 {
+    padding: 10px;
+ }
+
+ /* Footer */
+ .footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
 

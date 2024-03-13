@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog - Sin Malditas Excusas</title>
-        <link rel="shortcut icon" href="../Favicon.ico" type="image/x-icon">
-        <script src="https://kit.fontawesome.com/723a7f0076.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/estilos.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast - SME</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/723a7f0076.js" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
 <body>
-    <header>
-        <a href="../index.html">
-            <img src="../assets/img/logo_header_128.png" alt="Logo del podcast">
-
-        </a>
-        
-        <nav>
-            <ul class="listaNav">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./Nosotros.html">Nosotros</a></li>
-            <li><a href="./Galeria.html">Galeria</a></li>
-            <li><a href="./Podcast.html">Podcast</a></li>
-            <li><a href="./Blog.html">Blog</a></li>
-            <li><a href="#">Contacto</a></li>
-            </ul>
-
+    <header>   
+        <nav class="navbar navbar-expand-lg navbar-dark bgNavegacion">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="../assets/img/logo_header_SME.jpeg" alt="logo_sme" width="100px">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/podcast.html">Podcast</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>                                     
+                    </ul>
+                </div>
+            </div>                
         </nav>
-
     </header>
     <main>
-        <section>
+        <section class="container mt-5">
             <h1>Ponte en contacto</h1>
             <p class="ContaBold">¡Queremos saber de ti!</p>
-            <br>
             <form action="./404.html" method="post">
                 <fieldset>
                     <legend>Selecciona el tema</legend>
-                    <div>
-                        <label for="Tem">Indica Tema</label>
-                        <select name="Tema" id="Tem">
+                    <div class="mb-3">
+                        <label for="Tem" class="form-label">Indica Tema</label>
+                        <select name="Tema" id="Tem" class="form-select">
                             <option value="Consulta">Consulta</option>
                             <option value="Entrevista">Entrevista</option>
                             <option value="Mentoria" selected>Mentoría</option>
@@ -47,75 +61,91 @@
                             <option value="Otro">Otro</option>                        
                         </select>   
                     </div>
-                    <br>
-                <br>
-                <div>
-                    <label for="Nombre"></label>
-                    <input id ="nombre" name="nombre" type="text" placeholder="Ingresa Nombre y Apellido..." minlength="3" maxlength="50" required autofocus autocomplete="off">
-                    
-                    <label for="mail">Mail</label>
-                    <input id="mail" name="mail" type="email" placeholder="ejemplo@email.com" required>
-                </div>
-                <br>               
-                    <textarea name="Ingrese un comentario" id="comentario" cols="46" rows="2" placeholder="Ingrese un Comentario"></textarea>
-                <br>
-                <div>
-                    <input id="enviar" type="submit" value="Enviar">
-                    </fieldset>
-                </div>
-
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" class="form-control" placeholder="Ingresa Nombre y Apellido..." minlength="3" maxlength="50" required autofocus autocomplete="off">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mail" class="form-label">Mail</label>
+                        <input id="mail" name="mail" type="email" class="form-control" placeholder="ejemplo@email.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comentario" class="form-label">Comentario</label>
+                        <textarea name="comentario" id="comentario" class="form-control" cols="46" rows="2" placeholder="Ingrese un Comentario"></textarea>
+                    </div>
+                    <button id="enviar" type="submit" class="btn btn-primary">Enviar</button>
+                </fieldset>
             </form>
         </section>
-
-
-        <section>
-            <h4>Ubicación</h4>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425998.7443961157!2d-70.95949095053993!3d-33.47235163444463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1707754057828!5m2!1ses-419!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="container">
+            <h4 class="mt-5">Ubicación</h4>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425998.7443961157!2d-70.95949095053993!3d-33.47235163444463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1707754057828!5m2!1ses-419!2scl" class="embed-responsive-item" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
-
     </main>
-    <footer id="footer">
-        <h4>Contacto</h4>
-        <nav>
-            <ul>
-            <li>sinmalditasexcusas@gmail.com<a href="mailto:sinmalditasexcusas@gmail.com"></a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=56978798810">+56978798810</a></li>
-            <li>Santiago,Chile</li>
-            <a href="https://web.facebook.com/sinmalditasexcusas" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="https://www.instagram.com/sinmalditasexcusas/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/sinmalditasexcusas" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.tiktok.com/@sinmalditasexcusas" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="https://www.youtube.com/@sinmalditasexcusas/streams" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            </ul>
-
-            <h4>Contenido</h4>
-            <nav>
-                <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./Nosotros.html">Nosotros</a></li>
-                <li><a href="./Galeria.html">Galeria</a></li>
-                <li><a href="./Podcast.html">Podcast</a></li>
-                <li><a href="./Blog.html">Blog</a></li>
-                <li><a href="./Contacto.html">Contacto</a></li>
-                </ul>
-
-                <h4>Otros</h4>
-                <nav>
+    
+    <div class="container p-3 mt-3 ">
+        <footer class="footer container me-auto mb-2 mb-lg-0 w-100 justify-content-center">
+                    <div class="row">
+                <div class="col-md-3 justify-content-between">
+                    <h4>Contacto</h4>
                     <ul>
-                    <li><a href="./404.html">Artículos</a></li>
-                    <li><a href="./404.html">Charlas</a></li>
-                    <li><a href="./404.html">Cursos</a></li>
-                    <li><a href="./404.html">Mentorías</a></li>
-                    <li><a href="./404.html">Talleres</a></li>
+                        <li><a href="mailto:sinmalditasexcusas@gmail.com">sinmalditasexcusas@gmail.com</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=56978798810">+56978798810</a></li>
+                        <li>Santiago,Chile</li>
                     </ul>
-
+                    <div class="container">
+                        <div class="row justify-content-center m-3">
+                            <div class="col-auto">
+                                <a href="https://web.facebook.com/sinmalditasexcusas" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="https://www.instagram.com/sinmalditasexcusas/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="https://www.linkedin.com/company/sinmalditasexcusas" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="https://www.tiktok.com/@sinmalditasexcusas" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="https://www.youtube.com/@sinmalditasexcusas/streams" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h4>Contenido</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="../pages/Galeria.html">Galeria</a></li>
+                        <li><a href="../pages/Podcast.html">Podcast</a></li>
+                        <li><a href="../pages/Blog.html">Blog</a></li>
+                        <li><a href="../pages/Contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Otros</h4>
+                    <ul>
+                        <li><a href="../pages/404.html">Artículos</a></li>
+                        <li><a href="../pages/404.html">Charlas</a></li>
+                        <li><a href="../404.html">Cursos</a></li>
+                        <li><a href="../pages/404.html">Mentorías</a></li>
+                        <li><a href="../pages/404.html">Talleres</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
                     <h4>Escucha en:</h4>
-                <nav>
                     <ul>
-                    <li><a href="./404.html">Amazon</a></li>
-                    <li><a href="./404.html">Spotify</a></li>
+                        <li><a href="https://www.amazon.in/Sin-Malditas-Excusas/dp/B0B2N4ZM8C">Amazon</a></li>
+                        <li><a href="https://open.spotify.com/show/4KiCNxDWSB7Gd8QgXPeIvI?si=f540c963c2e54663">Spotify</a></li>
                     </ul>
-
-    </footer>
+                </div>
+            </div>
+        </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
