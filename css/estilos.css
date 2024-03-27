@@ -24,17 +24,11 @@ body h1 {
 
 /* Estilos de navegación */
 .bgNavegacion {
-    background-color: #000000;
+    background-color: #05204A; /* Color principal */
     color: #fff;
 }
 
-.btn {
-    color: #fff;
-    background-color: #000000;
-    border-color: #000000;
-}
-
-.navbar-nav li {    
+.navbar-nav li {
     margin-right: 20px;
     padding-left: 10px;
     padding-right: 10px;
@@ -43,73 +37,110 @@ body h1 {
     text-decoration: none;
 }
 
+.navbar-nav li a {
+    color: #fff;
+    transition: color 0.3s ease; /* Efecto de transición */
+}
+
+.navbar-nav li a:hover {
+    color: #FCA311; /* Color de paleta SME */
+}
+
 .logo {
     width: 100px;
 }
 
 /* Estilos para botones */
+.btn {
+    color: #fff;
+    background-color: #05204A; /* Color principal */
+    border-color: #05204A; /* Color principal */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Efecto de transición */
+}
+
+.btn:hover {
+    background-color: #FCA311; /* Color de paleta SME */
+    border-color: #FCA311; /* Color de paleta SME */
+}
+
 .btn.btn-success {
-    color: #CC2936;
+    color: #CC2936; /* Color de paleta SME */
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #750dfd;
-    border-color: #750dfd;
+    background-color: #750dfd; /* Color de paleta SME*/
+    border-color: #750dfd; /* Color de paleta SME */
 }
 
 .btn-primary:hover {
-    color: #fff;
-    background-color: #3f0987;
-    border-color: #3f0987;
+    background-color: #3f0987; /* Color de paleta SME */
+    border-color: #3f0987; /* Color de paleta SME*/
 }
 
 /* Estilos para el footer */
-
- .footer {
-    background-color: black;
-    color: white;
-}
-
-/* Estilos para los enlaces del footer */
-.footer a {
-    color: white;
-}
-
-/* Estilos para el título del footer */
-.footer h4 {
-    color: white;
-}
-
-}
-
-/* Estilos para dispositivos móviles */
-
-
-
-
-/* Estilos para la sección de Nosotros */
-.Nosotroshistoria {
-    color: #05204A;
-    padding: 20px;
-}
-
-/* Estilos Galeria */
-
-.galeria container img {
-    width: 100%;
-    height: auto;
-}
-
-#galeria .col-lg-4 {
-    padding: 10px;
- }
-
- /* Footer */
- .footer {
-    background-color: #000000;
+.footer {
+    background-color: #05204A; /* Color principal */
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
+/* Estilos para los enlaces del footer */
+.footer a {
+    color: #fff;
+}
+
+/* Estilos para el título del footer */
+.footer h4 {
+    color: #fff;
+}
+/* Estilos para botones con enlaces */
+.btn[href] {
+    color: #fff;
+    background-color: #FCA311;
+    border-color: #FCA311;
+}
+
+.btn[href]:hover {
+    color: #fff;
+    background-color: #CC2936;
+    border-color: #CC2936;
+}
+/* Estilos para el botón Suscribirse */
+.btn-subscribir {
+    color: #fff;
+    background-color: #FCA311;
+    border-color: #FCA311;
+}
+
+.btn-subscribir:hover {
+    color: #fff;
+    background-color: #CC2936;
+    border-color: #CC2936;
+}
+
+/* Estilos para el botón Enviar */
+.btn-enviar {
+    color: #fff;
+    background-color: #FCA311;
+    border-color: #FCA311;
+}
+
+.btn-enviar:hover {
+    color: #fff;
+    background-color: #CC2936;
+    border-color: #CC2936;
+}
+/* Estilos para el carousel */
+.carousel-item img {
+    max-width: 100%; 
+    height: auto;
+    object-fit: contain; /* Cambiamos el modo de ajuste */
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 250px; /* Ajusta la altura máxima para dispositivos móviles */
+    }
+}
