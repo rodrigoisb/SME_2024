@@ -231,3 +231,41 @@ body h1 {
 .footer .redes-sociales li {
     margin: 0 5px; /* Espacio entre los íconos */
 }
+
+/* Estilos personalizados para los logos */
+.fa-spotify {
+    color: #1DB954; /* Color de Spotify */
+}
+
+.fa-amazon {
+    color: #F90; /* Color de Amazon */
+}
+
+.fa-apple {
+    color: #A7A9AC; /* Color de Apple */
+}
+
+.fa-youtube {
+    color: #FF0000; /* Color de YouTube */
+}
+
+/* Efecto de hover */
+.fa-spotify:hover {
+    color: #0d8b4f; /* Color de Spotify al pasar el mouse */
+}
+
+.fa-amazon:hover {
+    color: #FF9900; /* Color de Amazon al pasar el mouse */
+}
+
+.fa-apple:hover {
+    color: #777777; /* Color de Apple al pasar el mouse */
+}
+
+.fa-youtube:hover {
+    color: #CC0000; /* Color de YouTube al pasar el mouse */
+}
+.main-section-podcast {
+    margin-top: 50px; /* Espacio en la parte superior */
+    margin-bottom: 50px; /* Espacio en la parte inferior */
+}
