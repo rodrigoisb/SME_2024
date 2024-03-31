@@ -1,0 +1,19 @@
+@mixin carousel-styles {
+    margin: 50px auto 30px;
+    max-width: 700px;
+
+    .carousel-item img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+
+        @media (max-width: 768px) {
+            max-height: 250px;
+            max-width: 90%;
+        }
+    }
+}
+
+#carouselExampleCaptions {
+    @include carousel-styles;
+}

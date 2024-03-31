@@ -3,44 +3,51 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Podcast - SME</title>
+        <!--Meta description-->
+        <meta name="description" content="Descubre el live podcast de Sin Malditas Excusas: inspiración, motivación y herramientas para superar excusas y alcanzar metas. Únete y transforma tu vida."
+        <!--Meta Keywords-->
+        <meta name="keywords" content="Podcast, Sin Malditas Excusas, Live Podcast, Inspiración, Motivación, Emprendimiento, Innovación, Startups, startup, founders, venturecapital, Herramientas Prácticas, Superación Personal">
+        <title>Escucha el Podcast Sin Malditas Excusas | SME</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <script src="https://kit.fontawesome.com/723a7f0076.js" crossorigin="anonymous"></script>
         
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/estilos.css">
+        <link rel="stylesheet" href="path/to/imagehover.css">
     </head>
     <body>
         <header>   
             <nav class="navbar navbar-expand-lg navbar-dark bgNavegacion">
                 <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
-                <img class="logo" src="./assets/img/logo_header_SME.jpeg" alt="logo_sme" width="100px">
-                        </a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        
-                        <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/galeria.html">Galeria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/podcast.html">Podcast</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                    </li>                                     
-                    </ul>
-                </div>
+                    <a class="navbar-brand" href="#">
+                        <img class="logo tracking-in-expand-forward-bottom" src="./assets/img/logo_header_SME.jpeg" alt="logo_sme" width="100px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/podcast.html">Podcast</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>                                     
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -51,7 +58,9 @@
                 <a href="./pages/Contacto.html" class="btn rounded-pill mt-5">Contacto</a>
             </div>
             <div class="col-md-6 mt-5">
-                <img src="./assets/img/Shout_home510x288.png" alt="hombre gritando" class="img-fluid mb-3" style="max-width: 100%;">
+                <figure class="imghvr-flip-diag-1">
+                    <img src="./assets/img/Shout_home510x288.png" alt="hombre gritando" class="img-fluid mb-3" style="max-width: 100%;">
+                </figure>
             </div>
         </div>
         
@@ -188,13 +197,13 @@
                 
 
 
-<section class="container mt-5 mb-5">
+<section class="container mt-10 mb-10">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <h3 class="text-center">Video Promocional</h3>
             <h4 class="text-center">Inicio de la nueva temporada</h4>
             <div class="embed-responsive embed-responsive-16by9 d-flex justify-content-center">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Z3XY2NxOeCY?si=VtUK9CoGtUE0iBGx" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                <iframe class width= "560" height="315" src="https://www.youtube.com/embed/Z3XY2NxOeCY?si=VtUK9CoGtUE0iBGx" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
             </div>
         </div>
     </div>
@@ -202,7 +211,7 @@
 
 
             
-<div class="container mt-5">
+<div class="container mt-10 mb-10">
     <h2 class="text-center">Testimonios</h2>
     <p class="text-center">¿Qué dice nuestra audiencia?</p>
 
@@ -235,12 +244,14 @@
     <h4 class="text-center">Suscríbete a nuestro Newsletter</h4>
     <p class="text-center">Únete a nuestra comunidad y descubre oportunidades infinitas para crecer juntos.</p>
     
+    <div class="subscription-container">
     <div class="d-flex justify-content-center">
         <form class="input-group mb-3">
             <input id="mail" name="mail" type="email" class="form-control" placeholder="ejemplo@email.com" required>
             <button class="btn btn-primary btn-subscribir" type="submit">Suscribirse</button>
         </form>
     </div>
+    </div>  
   
       <picture>    
         <img src="./assets/img/popular_chapter_index.png" class="img-fluid img-thumbnail" alt="invitados al podcast SME con mejor rating">

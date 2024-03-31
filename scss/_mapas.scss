@@ -1,0 +1,18 @@
+// Mapa para los colores de los logos
+$logos-color: (
+    spotify: #1DB954,
+    amazon: #F90,
+    apple: #A7A9AC,
+    youtube: #FF0000
+);
+
+// Bucle para aplicar los estilos a cada logo
+@each $logo, $color in $logos-color {
+    .fa-#{$logo} {
+        color: $color;
+
+        &:hover {
+            color: darken($color, 10%); 
+        }
+    }
+}

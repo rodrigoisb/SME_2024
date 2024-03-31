@@ -1,0 +1,110 @@
+/* Estilos para el footer */
+.footer {
+    background-color: $color-primario;
+    color: $color-blanco;
+    padding: 20px;
+    text-align: center;
+    list-style: none;
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
+
+    // Estilos para los enlaces del footer
+    a {
+        color: $color-blanco;
+
+        // Estilos para el título del footer
+        h4 {
+            color: $color-blanco;
+        }
+    }
+
+    ul.social li {
+        padding: 3px 0;
+
+        a i {
+            margin-right: 5px;
+            font-size: 25px;
+            -webkit-transition: .5s all ease;
+            -moz-transition: .5s all ease;
+            transition: .5s all ease;
+
+            &:hover {
+                font-size: 30px;
+                margin-top: -10px;
+            }
+        }
+    }
+
+    ul.quick-links li {
+        padding: 3px 0;
+
+        &:hover {
+            padding: 3px 0;
+            margin-left: 5px;
+            font-weight: 700;
+        }
+
+        a i {
+            margin-right: 5px;
+        }
+
+        &:hover a i {
+            font-weight: 700;
+        }
+    }
+
+    // Estilos para botones con enlaces
+    .btn[href] {
+        color: #fff;
+        background-color: #FCA311;
+        border-color: #FCA311;
+
+        &:hover {
+            color: #fff;
+            background-color: #CC2936;
+            border-color: #CC2936;
+        }
+    }
+
+    /* Estilos para los íconos de redes sociales */
+.footer .redes-sociales {
+    // Otros estilos...
+    display: flex; 
+    list-style-type: none; 
+    padding: 0; 
+
+    // Estilos para cada ícono de red social
+    li {
+        margin: 0 5px; /* Espacio entre los íconos */
+    }
+
+    // Estilos personalizados para los logos
+    .fa-spotify {
+        color: #1DB954; /* Color de Spotify */
+        &:hover {
+            color: #0d8b4f; /* Color de Spotify al pasar el mouse */
+        }
+    }
+
+    .fa-amazon {
+        color: #F90; /* Color de Amazon */
+        &:hover {
+            color: #FF9900; /* Color de Amazon al pasar el mouse */
+        }
+    }
+
+    .fa-apple {
+        color: #A7A9AC; /* Color de Apple */
+        &:hover {
+            color: #777777; /* Color de Apple al pasar el mouse */
+        }
+    }
+
+    .fa-youtube {
+        color: #FF0000; /* Color de YouTube */
+        &:hover {
+            color: #CC0000; /* Color de YouTube al pasar el mouse */
+        }
+    }
+}
+}

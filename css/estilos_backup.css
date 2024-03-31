@@ -1,0 +1,271 @@
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    color: #05204A;
+    margin: 20px;
+    padding: 20px;
+}
+
+body h1 {
+    font-family: "League Gothic", sans-serif;
+    font-size: 3em;
+    color: #05204A;
+    text-align: left;
+    margin: 20px;
+}
+
+/* Estilos de navegación */
+.bgNavegacion {
+    background-color: #05204A; /* Color principal */
+    color: #fff;
+}
+
+.navbar-nav li {
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    line-height: 100px;
+    text-decoration: none;
+}
+
+.navbar-nav li a {
+    color: #fff;
+    transition: color 0.3s ease; /* Efecto de transición */
+}
+
+.navbar-nav li a:hover {
+    color: #FCA311; /* Color de paleta SME */
+}
+
+.logo {
+    width: 100px;
+}
+
+/* Estilos para botones */
+.btn {
+    color: #fff;
+    background-color: #05204A; /* Color principal */
+    border-color: #05204A; /* Color principal */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Efecto de transición */
+}
+
+.btn:hover {
+    background-color: #FCA311; /* Color de paleta SME */
+    border-color: #FCA311; /* Color de paleta SME */
+}
+
+.btn.btn-success {
+    color: #CC2936; /* Color de paleta SME */
+}
+
+.btn-primary {
+    background-color: #750dfd; /* Color de paleta SME*/
+    border-color: #750dfd; /* Color de paleta SME */
+}
+
+.btn-primary:hover {
+    background-color: #3f0987; /* Color de paleta SME */
+    border-color: #3f0987; /* Color de paleta SME*/
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #05204A; /* Color principal */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    list-style: none;
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
+
+}
+
+/* Estilos para los enlaces del footer */
+.footer a {
+    color: #fff;
+
+}
+
+/* Estilos para el título del footer */
+.footer h4 {
+    color: #fff;
+}
+
+.footer ul.social li{
+    padding: 3px 0;
+  }
+  .footer ul.social li a i {
+      margin-right: 5px;
+    font-size:25px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+  }
+  .footer ul.social li:hover a i {
+    font-size:30px;
+    margin-top:-10px;
+  }
+  .footer ul.social li a,
+  .footer ul.quick-links li a{
+    color:#ffffff;
+  }
+  .footer ul.social li a:hover{
+    color:#eeeeee;
+  }
+  .footer ul.quick-links li{
+    padding: 3px 0;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+  }
+  .footer ul.quick-links li:hover{
+    padding: 3px 0;
+    margin-left:5px;
+    font-weight:700;
+  }
+  .footer ul.quick-links li a i{
+    margin-right: 5px;
+  }
+  .footer ul.quick-links li:hover a i {
+      font-weight: 700;
+  }
+  
+
+
+/* Estilos para botones con enlaces */
+.btn[href] {
+    color: #fff;
+    background-color: #FCA311;
+    border-color: #FCA311;
+}
+
+.btn[href]:hover {
+    color: #fff;
+    background-color: #CC2936;
+    border-color: #CC2936;
+}
+/* Estilos para el botón Suscribirse */
+.btn-subscribir {
+    color: #fff;
+    background-color: #FCA311;
+    border-color: #FCA311;
+}
+
+.btn-subscribir:hover {
+    color: #fff;
+    background-color: #CC2936;
+    border-color: #CC2936;
+}
+
+/* Estilos para el botón Enviar */
+.btn-enviar {
+    color: #fff;
+    background-color: #FCA311;
+    border-color: #FCA311;
+}
+
+.btn-enviar:hover {
+    color: #fff;
+    background-color: #CC2936;
+    border-color: #CC2936;
+}
+/* Estilos para el carousel */
+#carouselExampleCaptions {
+    max-width: 700px; /* Reducir el ancho del carousel */
+    margin: 50px auto 30px; /* Centrar el carousel en la página */
+}
+
+.carousel-item img {
+    max-width: 100%; 
+    height: auto;
+    object-fit: contain; /* Cambiamos el modo de ajuste */
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+    #carouselExampleCaptions {
+        max-width: 90%; /* Reducir aún más el ancho del carousel para dispositivos móviles */
+    }
+
+    .carousel-item img {
+        max-height: 250px;
+        max-width: 90%; /* Ajusta la altura máxima para dispositivos móviles */
+    }
+}
+/* Estilo para la imagen de la galería */
+.imagen-galeria {
+    overflow: hidden; 
+    position: relative; 
+}
+
+/* Efecto de zoom al pasar el mouse */
+.imagen-galeria img {
+    transition: transform 0.3s ease; 
+    width: 300px;
+    height: auto;
+}
+
+/* Efecto de agrandamiento al pasar el mouse */
+.imagen-galeria:hover img {
+    transform: scale(1.2); 
+}
+
+/* Estilos para los íconos de redes sociales */
+.footer .redes-sociales {
+    /* Otros estilos... */
+    display: flex; /* Usa flexbox */
+    list-style-type: none; /* Quita los estilos de lista */
+    padding: 0; /* Quita el relleno */
+}
+
+/* Estilos para cada ícono de red social */
+.footer .redes-sociales li {
+    margin: 0 5px; /* Espacio entre los íconos */
+}
+
+/* Estilos personalizados para los logos */
+.fa-spotify {
+    color: #1DB954; /* Color de Spotify */
+}
+
+.fa-amazon {
+    color: #F90; /* Color de Amazon */
+}
+
+.fa-apple {
+    color: #A7A9AC; /* Color de Apple */
+}
+
+.fa-youtube {
+    color: #FF0000; /* Color de YouTube */
+}
+
+/* Efecto de hover */
+.fa-spotify:hover {
+    color: #0d8b4f; /* Color de Spotify al pasar el mouse */
+}
+
+.fa-amazon:hover {
+    color: #FF9900; /* Color de Amazon al pasar el mouse */
+}
+
+.fa-apple:hover {
+    color: #777777; /* Color de Apple al pasar el mouse */
+}
+
+.fa-youtube:hover {
+    color: #CC0000; /* Color de YouTube al pasar el mouse */
+}
+.main-section-podcast {
+    margin-top: 50px; /* Espacio en la parte superior */
+    margin-bottom: 50px; /* Espacio en la parte inferior */
+}
