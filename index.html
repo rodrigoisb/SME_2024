@@ -55,7 +55,7 @@
             <div class="col-md-6">
                 <h1 class="text-lg-start mb-5 mt-5">Live Podcast!</h1>
                 <p class="text-black mb-1 mt-1">Creemos firmemente que las excusas nos alejan de nuestro verdadero ser y nos impiden alcanzar nuestras metas.</p>
-                <a href="./pages/Contacto.html" class="btn rounded-pill mt-5">Contacto</a>
+                <a href="./pages/contacto.html" class="btn rounded-pill mt-5">Contacto</a>
             </div>
             <div class="col-md-6 mt-5">
                 <figure class="imghvr-flip-diag-1">
@@ -245,17 +245,24 @@
     <p class="text-center">Únete a nuestra comunidad y descubre oportunidades infinitas para crecer juntos.</p>
     
     <div class="subscription-container">
-    <div class="d-flex justify-content-center">
-        <form class="input-group mb-3">
-            <input id="mail" name="mail" type="email" class="form-control" placeholder="ejemplo@email.com" required>
-            <button class="btn btn-primary btn-subscribir" type="submit">Suscribirse</button>
-        </form>
+        <div class="d-flex justify-content-center ">
+            <iframe src="https://sinmalditasexcusas.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+            
+        </div>
+       
+        <div class="d-flex justify-content-center mt-3">
+            <form class="input-group mb-3" action="procesar_formulario.php" method="post">
+                <input id="mail" name="mail" type="email" class="form-control" placeholder="ejemplo@email.com" required>
+                <button class="btn btn-primary btn-subscribir" type="submit">Suscribirse</button>
+            </form>
+        </div>
     </div>
-    </div>  
   
-      <picture>    
-        <img src="./assets/img/popular_chapter_index.png" class="img-fluid img-thumbnail" alt="invitados al podcast SME con mejor rating">
-      </picture>
+<div class="image-container">
+    <picture>
+        <img src="./assets/img/Popular_chapter_index.png" class="img-fluid img-thumbnail" alt="invitados al podcast SME con mejor rating">
+    </picture>
+</div>
 
 
         </main>
@@ -264,7 +271,7 @@
                 <div class="col-md-3">
                     <h5>Contacto</h5>
                     <ul class="list-unstyled">
-                        <li><a href="mailto:sinmalditasexcusas@gmail.com">Contactar</a></li>
+                        <li><a href="mailto:hola@sinmalditasexcusas.cl">Contactar</a></li>
                         <li><a href="https://api.whatsapp.com/send?phone=56978798810" target="_blank">+56978798810</a></li>
                         <li>Santiago, Chile</li>
                     </ul>
@@ -319,6 +326,7 @@
             </div>
         </footer>   
         <!-- Option 1: Bootstrap Bundle with Popper -->
+        
         <script src="./js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
