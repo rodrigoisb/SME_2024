@@ -22,14 +22,15 @@
 
 .main-section-podcast {
     margin-top: 50px; 
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
     
 
 }
 
 .image-container{
-    margin-top: 50px; 
-    margin-bottom: 50px; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    max-width: 80%; 
 }
 
 picture {
@@ -38,3 +39,8 @@ picture {
         height: auto;
         border-radius: 5px;
     }}
+
+    .subscription-form-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;}

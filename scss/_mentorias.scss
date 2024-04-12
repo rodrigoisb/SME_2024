@@ -1,0 +1,81 @@
+// Estilos base para los botones
+.btn {
+    color: #fff;
+    background-color: #05204A; /* Color principal */
+    border-color: #05204A; /* Color principal */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Efecto de transición */
+
+    &:hover {
+        background-color: #FCA311; /* Color de paleta SME */
+        border-color: #FCA311; /* Color de paleta SME */
+    }
+
+    &.btn-success {
+        color: #CC2936; /* Color de paleta SME */
+    }
+
+    &.btn-primary {
+        background-color: #750dfd; /* Color de paleta SME */
+        border-color: #750dfd; /* Color de paleta SME */
+
+        &:hover {
+            background-color: #3f0987; /* Color de paleta SME */
+            border-color: #3f0987; /* Color de paleta SME */
+        }
+    }
+}
+
+// Extendemos los estilos para los botones específicos
+.btn-subscribir {
+    @extend .btn;
+    background-color: #FCA311;
+    border-color: #FCA311;
+
+    &:hover {
+        background-color: #CC2936;
+        border-color: #CC2936;
+    }
+}
+
+.btn-enviar {
+    @extend .btn;
+    background-color: #FCA311;
+    border-color: #FCA311;
+
+    &:hover {
+        background-color: #CC2936;
+        border-color: #CC2936;
+    }
+}
+
+// Animación imghvr-flip-diag-1
+.imghvr-flip-diag-1 {
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.imghvr-flip-diag-1:hover {
+    transform: rotateY(-180deg);
+}
+
+// Estilos para la sección de Mentorías
+#mentorias {
+    background-color: #F0F0F0; /* Color de fondo */
+    padding: 50px 0; /* Espaciado interno */
+}
+
+#mentorias .card {
+    border: none; /* Sin borde */
+    background-color: #fff; /* Color de fondo de la tarjeta */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+#mentorias .card-title {
+    color: #05204A; /* Color del título */
+    font-size: 1.5rem; /* Tamaño del título */
+}
+
+#mentorias .card-text {
+    color: #666; /* Color del texto */
+}

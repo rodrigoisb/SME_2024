@@ -52,9 +52,75 @@
   transform: rotateY(-180deg);
 }
 
-.subscription-container {
-  max-width: 600px;
-  margin: 0 auto;
+.container-fluid .row .col-sm-12 img {
+  width: 100%;
+}
+
+figure.effect-lily {
+  position: relative;
+}
+
+figure.effect-lily img {
+  max-width: none;
+  width: -webkit-calc(100% + 50px);
+  width: calc(100% + 50px);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-40px, 0, 0);
+  transform: translate3d(-40px, 0, 0);
+}
+
+figure.effect-lily figcaption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 2em;
+  text-align: left;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+figure.effect-lily h2,
+figure.effect-lily p {
+  -webkit-transform: translate3d(0, 40px, 0);
+  transform: translate3d(0, 40px, 0);
+  color: #000;
+}
+
+figure.effect-lily h2 {
+  font-size: 24px;
+  font-weight: bold;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+figure.effect-lily p {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+  transition: opacity 0.2s, transform 0.35s;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover p {
+  opacity: 1;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover h2,
+figure.effect-lily:hover p {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect-lily:hover p {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
 }
 
 /* Estilo para la imagen de la galería */
@@ -78,6 +144,24 @@
 .main-section-podcast {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.image-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 80%;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.subscription-form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 /* Estilos generales */
@@ -113,6 +197,9 @@
   line-height: 100px;
   text-decoration: none;
 }
+.bgNavegacion .navbar-nav li .navbar-nav .nav-link {
+  margin: 1rem; /* Ajusta este valor según tus preferencias */
+}
 .bgNavegacion .navbar-nav li a {
   color: #fff;
   transition: color 0.3s ease; /* Efecto de transición */
@@ -122,6 +209,9 @@
 }
 .bgNavegacion .logo {
   width: 100px;
+}
+.bgNavegacion:hover {
+  background-color: #08357a; /* Cuando pases el mouse, iluminará el fondo del navbar */
 }
 
 /* ----------------------------------------------
@@ -311,6 +401,76 @@
     max-height: 250px;
     max-width: 90%;
   }
+}
+
+.btn, .btn-subscribir, .btn-enviar {
+  color: #fff;
+  background-color: #05204A; /* Color principal */
+  border-color: #05204A; /* Color principal */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Efecto de transición */
+}
+.btn:hover, .btn-subscribir:hover, .btn-enviar:hover {
+  background-color: #FCA311; /* Color de paleta SME */
+  border-color: #FCA311; /* Color de paleta SME */
+}
+.btn.btn-success, .btn-success.btn-subscribir, .btn-success.btn-enviar {
+  color: #CC2936; /* Color de paleta SME */
+}
+.btn.btn-primary, .btn-primary.btn-subscribir, .btn-primary.btn-enviar {
+  background-color: #750dfd; /* Color de paleta SME */
+  border-color: #750dfd; /* Color de paleta SME */
+}
+.btn.btn-primary:hover, .btn-primary.btn-subscribir:hover, .btn-primary.btn-enviar:hover {
+  background-color: #3f0987; /* Color de paleta SME */
+  border-color: #3f0987; /* Color de paleta SME */
+}
+
+.btn-subscribir {
+  background-color: #FCA311;
+  border-color: #FCA311;
+}
+.btn-subscribir:hover {
+  background-color: #CC2936;
+  border-color: #CC2936;
+}
+
+.btn-enviar {
+  background-color: #FCA311;
+  border-color: #FCA311;
+}
+.btn-enviar:hover {
+  background-color: #CC2936;
+  border-color: #CC2936;
+}
+
+.imghvr-flip-diag-1 {
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.imghvr-flip-diag-1:hover {
+  transform: rotateY(-180deg);
+}
+
+#mentorias {
+  background-color: #F0F0F0; /* Color de fondo */
+  padding: 50px 0; /* Espaciado interno */
+}
+
+#mentorias .card {
+  border: none; /* Sin borde */
+  background-color: #fff; /* Color de fondo de la tarjeta */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+#mentorias .card-title {
+  color: #05204A; /* Color del título */
+  font-size: 1.5rem; /* Tamaño del título */
+}
+
+#mentorias .card-text {
+  color: #666; /* Color del texto */
 }
 
 /*# sourceMappingURL=estilos.css.map */
