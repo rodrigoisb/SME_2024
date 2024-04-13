@@ -52,7 +52,7 @@
     .row {
         .col-sm-12 {
             img {
-                width: 100%; // Establece el ancho de la imagen al 100% del contenedor padre
+                width: 100%;
             }
         }
     }
@@ -185,5 +185,23 @@ figure.effect-lily:hover p {
 
     /* Cambiar estilo al pasar el mouse sobre el botón */
     .show-more-btn:hover {
-        background-color: #0056b3; /* Nuevo color de fondo al pasar el mouse */
+        background-color: #0056b3; 
     }
+
+    //Error 404
+
+    .figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .figure img {
+        max-width: 100%;
+    }
+    
+    .text-white {
+        color: white;
+    }
+    

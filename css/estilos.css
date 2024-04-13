@@ -166,7 +166,22 @@ figure.effect-lily:hover p {
 
 /* Cambiar estilo al pasar el mouse sobre el botón */
 .show-more-btn:hover {
-  background-color: #0056b3; /* Nuevo color de fondo al pasar el mouse */
+  background-color: #0056b3;
+}
+
+.figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.figure img {
+  max-width: 100%;
+}
+
+.text-white {
+  color: white;
 }
 
 /* Estilo para la imagen de la galería */
@@ -307,6 +322,22 @@ picture img {
 .bgNavegacion {
   background-color: #05204A;
   color: #fff;
+}
+.bgNavegacion .nav-item {
+  margin-right: 20px;
+  height: 100px;
+  line-height: 100px;
+  text-decoration: none;
+}
+.bgNavegacion .nav-link {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.bgNavegacion .nav-link:hover {
+  color: #FCA311;
+}
+.bgNavegacion .nav-link.active {
+  font-weight: bold; /* Estilo adicional para la página actual */
 }
 .bgNavegacion .navbar-nav li {
   margin-right: 20px;

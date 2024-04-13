@@ -89,8 +89,8 @@ picture {
 //Testimonios
 
 .testimonials-container {
-    margin-top: 50px; // Ajusta el margen superior según sea necesario
-    margin-bottom: 50px; // Ajusta el margen inferior según sea necesario
+    margin-top: 50px; 
+    margin-bottom: 50px; 
 }
 
 .testimonials-title {
@@ -99,28 +99,28 @@ picture {
 
 .testimonials-subtitle {
     text-align: center;
-    margin-bottom: 30px; // Ajusta el margen inferior según sea necesario
+    margin-bottom: 30px; 
 }
 
 .testimonial-card {
-    border: 1px solid #eaeaea; // Color del borde de la tarjeta
-    border-radius: 10px; // Radio de borde de la tarjeta
-    margin-bottom: 30px; // Espacio entre las tarjetas
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // Sombra de la tarjeta
+    border: 1px solid #eaeaea; 
+    border-radius: 10px; 
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .testimonial-card-title {
-    color: #333; // Color del título de la tarjeta
-    font-size: 20px; // Tamaño de fuente del título de la tarjeta
-    margin-bottom: 15px; // Espacio entre el título y el texto del testimonio
+    color: #333;
+    font-size: 20px; 
+    margin-bottom: 15px; 
 }
 
 .testimonial-card-text {
-    color: #666; // Color del texto del testimonio
-    font-size: 16px; // Tamaño de fuente del texto del testimonio
+    color: #666; 
+    font-size: 16px; 
 }
 
 .testimonial-card-author {
-    color: #999; // Color del autor del testimonio
-    font-size: 14px; // Tamaño de fuente del autor del testimonio
+    color: #999; 
+    font-size: 14px; 
 }

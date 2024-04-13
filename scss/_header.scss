@@ -26,6 +26,26 @@
     background-color: $color-primario;
     color: $color-blanco;
 
+    .nav-item {
+        margin-right: 20px;
+        height: 100px;
+        line-height: 100px;
+        text-decoration: none;
+    }
+
+    .nav-link {
+        color: $color-blanco;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $color-secundario;
+        }
+
+        &.active {
+            font-weight: bold; /* Estilo adicional para la página actual */
+        }
+    }
+
     // Estilos para navbar-nav li dentro de .bgNavegacion
     .navbar-nav li {
         margin-right: 20px;
