@@ -34,15 +34,6 @@
   border-color: #CC2936;
 }
 
-.btn-enviar {
-  background-color: #FCA311;
-  border-color: #FCA311;
-}
-.btn-enviar:hover {
-  background-color: #CC2936;
-  border-color: #CC2936;
-}
-
 .imghvr-flip-diag-1 {
   transform-style: preserve-3d;
   transition: transform 0.5s ease;
@@ -123,6 +114,61 @@ figure.effect-lily:hover p {
   transition-duration: 0.35s;
 }
 
+.episode-container {
+  display: flex;
+}
+.episode-container .episode-img {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+.episode-container .episode-img img {
+  width: 40%;
+  height: auto;
+}
+.episode-container .fw {
+  max-width: auto;
+}
+
+.episode-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Ajusta el espacio entre los episodios */
+}
+
+.episode-img {
+  flex-shrink: 0; /* Evita que la imagen se reduzca demasiado */
+  margin-right: 20px; /* Ajusta el espacio entre la imagen y el texto */
+}
+
+.episode-img img {
+  max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+  height: auto; /* Ajusta la altura automáticamente */
+}
+
+.episode-details {
+  flex-grow: 1; /* Permite que el texto ocupe todo el espacio restante */
+}
+
+.show-more-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 150px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Cambiar estilo al pasar el mouse sobre el botón */
+.show-more-btn:hover {
+  background-color: #0056b3; /* Nuevo color de fondo al pasar el mouse */
+}
+
 /* Estilo para la imagen de la galería */
 .imagen-galeria {
   overflow: hidden;
@@ -149,7 +195,7 @@ figure.effect-lily:hover p {
 .image-container {
   margin-top: 20px;
   margin-bottom: 20px;
-  max-width: 80%;
+  max-width: 100%;
 }
 
 picture img {
@@ -162,6 +208,79 @@ picture img {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+.subscription-form-container form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.subscription-form-container .form-control {
+  width: calc(100% - 120px); /* Ajusta el ancho del campo de entrada */
+  margin-right: 10px;
+}
+.subscription-form-container .btn-subscribir {
+  width: 100px;
+  color: #fff;
+  background-color: #05204A; /* Color principal */
+  border-color: #05204A; /* Color principal */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Efecto de transición */
+}
+.subscription-form-container .btn-subscribir:hover {
+  background-color: #FCA311; /* Color de paleta SME */
+  border-color: #FCA311; /* Color de paleta SME */
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: rotate(10deg);
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: rotate(10deg);
+}
+
+.testimonials-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.testimonials-title {
+  text-align: center;
+}
+
+.testimonials-subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonial-card {
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card-title {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.testimonial-card-text {
+  color: #666;
+  font-size: 16px;
+}
+
+.testimonial-card-author {
+  color: #999;
+  font-size: 14px;
 }
 
 /* Estilos generales */
@@ -239,24 +358,24 @@ picture img {
   }
 }
 /* Estilos para botones */
-.btn, .btn-subscribir, .btn-enviar {
+.btn, .btn-enviar, .btn-subscribir {
   color: #fff;
   background-color: #05204A;
   border-color: #05204A;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
-.btn:hover, .btn-subscribir:hover, .btn-enviar:hover {
+.btn:hover, .btn-enviar:hover, .btn-subscribir:hover {
   background-color: #FCA311;
   border-color: #FCA311;
 }
-.btn.btn-success, .btn-success.btn-subscribir, .btn-success.btn-enviar {
+.btn.btn-success, .btn-success.btn-enviar, .btn-success.btn-subscribir {
   color: #CC2936;
 }
-.btn.btn-primary, .btn-primary.btn-subscribir, .btn-primary.btn-enviar {
+.btn.btn-primary, .btn-primary.btn-enviar, .btn-primary.btn-subscribir {
   background-color: #750dfd;
   border-color: #750dfd;
 }
-.btn.btn-primary:hover, .btn-primary.btn-subscribir:hover, .btn-primary.btn-enviar:hover {
+.btn.btn-primary:hover, .btn-primary.btn-enviar:hover, .btn-primary.btn-subscribir:hover {
   background-color: #5d02d5;
   border-color: #5d02d5;
 }
@@ -269,6 +388,13 @@ picture img {
 .header.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+h1.custom-h1 {
+  font-size: 55px;
+  line-height: 1em;
+  margin-bottom: 0;
+  font-weight: bold;
 }
 
 /* Estilos para el footer */
@@ -316,12 +442,12 @@ picture img {
 .footer ul.quick-links li:hover a i {
   font-weight: 700;
 }
-.footer .btn[href], .footer [href].btn-subscribir, .footer [href].btn-enviar {
+.footer .btn[href], .footer [href].btn-enviar, .footer [href].btn-subscribir {
   color: #fff;
   background-color: #FCA311;
   border-color: #FCA311;
 }
-.footer .btn[href]:hover, .footer [href].btn-subscribir:hover, .footer [href].btn-enviar:hover {
+.footer .btn[href]:hover, .footer [href].btn-enviar:hover, .footer [href].btn-subscribir:hover {
   color: #fff;
   background-color: #CC2936;
   border-color: #CC2936;
@@ -389,7 +515,8 @@ picture img {
 
 #carouselExampleCaptions {
   margin: 50px auto 30px;
-  max-width: 700px;
+  max-width: 70%;
+  height: auto;
 }
 #carouselExampleCaptions .carousel-item img {
   max-width: 100%;
@@ -403,24 +530,24 @@ picture img {
   }
 }
 
-.btn, .btn-subscribir, .btn-enviar {
+.btn, .btn-enviar, .btn-subscribir {
   color: #fff;
   background-color: #05204A; /* Color principal */
   border-color: #05204A; /* Color principal */
   transition: background-color 0.3s ease, border-color 0.3s ease; /* Efecto de transición */
 }
-.btn:hover, .btn-subscribir:hover, .btn-enviar:hover {
+.btn:hover, .btn-enviar:hover, .btn-subscribir:hover {
   background-color: #FCA311; /* Color de paleta SME */
   border-color: #FCA311; /* Color de paleta SME */
 }
-.btn.btn-success, .btn-success.btn-subscribir, .btn-success.btn-enviar {
+.btn.btn-success, .btn-success.btn-enviar, .btn-success.btn-subscribir {
   color: #CC2936; /* Color de paleta SME */
 }
-.btn.btn-primary, .btn-primary.btn-subscribir, .btn-primary.btn-enviar {
+.btn.btn-primary, .btn-primary.btn-enviar, .btn-primary.btn-subscribir {
   background-color: #750dfd; /* Color de paleta SME */
   border-color: #750dfd; /* Color de paleta SME */
 }
-.btn.btn-primary:hover, .btn-primary.btn-subscribir:hover, .btn-primary.btn-enviar:hover {
+.btn.btn-primary:hover, .btn-primary.btn-enviar:hover, .btn-primary.btn-subscribir:hover {
   background-color: #3f0987; /* Color de paleta SME */
   border-color: #3f0987; /* Color de paleta SME */
 }

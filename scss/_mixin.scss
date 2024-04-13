@@ -1,6 +1,7 @@
 @mixin carousel-styles {
     margin: 50px auto 30px;
-    max-width: 700px;
+    max-width: 70%;
+    height: auto;
 
     .carousel-item img {
         max-width: 100%;

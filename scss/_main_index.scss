@@ -30,7 +30,7 @@
 .image-container{
     margin-top: 20px; 
     margin-bottom: 20px;
-    max-width: 80%; 
+    max-width: 100%; 
 }
 
 picture {
@@ -43,4 +43,84 @@ picture {
     .subscription-form-container {
         display: flex;
         justify-content: center;
-        margin-top: 20px;}
+        margin-top: 20px;
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .form-control {
+            width: calc(100% - 120px); /* Ajusta el ancho del campo de entrada */
+            margin-right: 10px;
+        }
+    
+        .btn-subscribir {
+            width: 100px;
+            color: #fff;
+            background-color: #05204A; /* Color principal */
+            border-color: #05204A; /* Color principal */
+            transition: background-color 0.3s ease, border-color 0.3s ease; /* Efecto de transición */
+        
+            &:hover {
+                background-color: #FCA311; /* Color de paleta SME */
+                border-color: #FCA311; /* Color de paleta SME */
+            }
+        }
+    }
+
+    
+
+
+        .card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: rotate(10deg);
+}
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: rotate(10deg);
+}
+//Testimonios
+
+.testimonials-container {
+    margin-top: 50px; // Ajusta el margen superior según sea necesario
+    margin-bottom: 50px; // Ajusta el margen inferior según sea necesario
+}
+
+.testimonials-title {
+    text-align: center;
+}
+
+.testimonials-subtitle {
+    text-align: center;
+    margin-bottom: 30px; // Ajusta el margen inferior según sea necesario
+}
+
+.testimonial-card {
+    border: 1px solid #eaeaea; // Color del borde de la tarjeta
+    border-radius: 10px; // Radio de borde de la tarjeta
+    margin-bottom: 30px; // Espacio entre las tarjetas
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // Sombra de la tarjeta
+}
+
+.testimonial-card-title {
+    color: #333; // Color del título de la tarjeta
+    font-size: 20px; // Tamaño de fuente del título de la tarjeta
+    margin-bottom: 15px; // Espacio entre el título y el texto del testimonio
+}
+
+.testimonial-card-text {
+    color: #666; // Color del texto del testimonio
+    font-size: 16px; // Tamaño de fuente del texto del testimonio
+}
+
+.testimonial-card-author {
+    color: #999; // Color del autor del testimonio
+    font-size: 14px; // Tamaño de fuente del autor del testimonio
+}

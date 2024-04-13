@@ -37,17 +37,7 @@
     }
 }
 
-.btn-enviar {
-    @extend .btn;
-    background-color: #FCA311;
-    border-color: #FCA311;
 
-    &:hover {
-        background-color: #CC2936;
-        border-color: #CC2936;
-    }
-    
-}
 
 // Animación imghvr-flip-diag-1
 .imghvr-flip-diag-1 {
@@ -137,3 +127,63 @@ figure.effect-lily:hover p {
     transition-duration: 0.35s;
 }
 
+// Imagenes Podcast
+.episode-container {
+    display: flex;
+
+    .episode-img {
+        flex: 0 0 auto;
+        margin-right: 20px; 
+
+        img {
+            width: 40%; 
+            height: auto; 
+        }
+    }
+
+
+.fw {
+    max-width: auto; 
+}
+}
+
+    .episode-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px; /* Ajusta el espacio entre los episodios */
+    }
+
+    .episode-img {
+        flex-shrink: 0; /* Evita que la imagen se reduzca demasiado */
+        margin-right: 20px; /* Ajusta el espacio entre la imagen y el texto */
+    }
+
+    .episode-img img {
+        max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .episode-details {
+        flex-grow: 1; /* Permite que el texto ocupe todo el espacio restante */
+    }
+
+     // Estilo para el botón "Ver más" 
+     .show-more-btn {
+        background-color: #007bff; 
+        color: #fff; 
+        border: none; 
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer; 
+        transition: background-color 0.3s ease; 
+        max-width: 150px; 
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    /* Cambiar estilo al pasar el mouse sobre el botón */
+    .show-more-btn:hover {
+        background-color: #0056b3; /* Nuevo color de fondo al pasar el mouse */
+    }
